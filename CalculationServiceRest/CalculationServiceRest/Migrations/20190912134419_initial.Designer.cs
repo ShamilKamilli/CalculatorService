@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CalculationServiceRest.Migrations
 {
     [DbContext(typeof(CalculationDbContext))]
-    [Migration("20190912125806_initial")]
+    [Migration("20190912134419_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,9 +47,7 @@ namespace CalculationServiceRest.Migrations
 
             modelBuilder.Entity("CalculationServiceRest.Models.MethodType", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<TimeSpan>("InsertDate")
                         .HasColumnName("INSERT_DATE");

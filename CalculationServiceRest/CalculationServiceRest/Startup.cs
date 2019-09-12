@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CalculationServiceRest.Core.Interfaces;
+using CalculationServiceRest.Core.ServiceImplementation;
 using CalculationServiceRest.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,8 +12,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NLog;
+using NLog.Web;
+using SoapServiceReference;
 
 namespace CalculationServiceRest
 {
@@ -22,6 +26,8 @@ namespace CalculationServiceRest
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
+
+            GlobalDiagnosticsContext.Set("connectionString",_configuration.GetConnectionString("CalculationServiceConnection"));
         }
 
        
@@ -31,6 +37,12 @@ namespace CalculationServiceRest
             {
                 opt.UseSqlServer(_configuration.GetConnectionString("CalculationServiceConnection"));
             });
+
+            services.AddScoped<CalculatorSoap,CalculatorSoapClient>();
+
+            services.AddScoped<ICalculatorService, CalculatorServiceImplementation>();
+
+            services.AddScoped<ILoggerDependency, LoggerDependency>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

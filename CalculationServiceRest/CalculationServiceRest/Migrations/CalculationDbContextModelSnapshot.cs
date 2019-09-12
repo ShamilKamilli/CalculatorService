@@ -45,9 +45,7 @@ namespace CalculationServiceRest.Migrations
 
             modelBuilder.Entity("CalculationServiceRest.Models.MethodType", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<TimeSpan>("InsertDate")
                         .HasColumnName("INSERT_DATE");

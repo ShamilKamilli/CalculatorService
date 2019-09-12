@@ -17,7 +17,6 @@ C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServi
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.runtimeconfig.dev.json
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.dll
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.pdb
-C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.csprojAssemblyReference.cache
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.csproj.CoreCompileInputs.cache
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorAssemblyInfo.cache
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorAssemblyInfo.cs
@@ -26,3 +25,4 @@ C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServi
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorTargetAssemblyInfo.cache
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.dll
 C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.pdb
+C:\Users\code\Desktop\CalculationService\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.csprojAssemblyReference.cache

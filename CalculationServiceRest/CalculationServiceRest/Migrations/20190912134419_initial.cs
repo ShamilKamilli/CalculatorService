@@ -12,8 +12,7 @@ namespace CalculationServiceRest.Migrations
                 name: "MethodTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false),
                     INSERT_DATE = table.Column<TimeSpan>(nullable: false)
                 },
                 constraints: table =>

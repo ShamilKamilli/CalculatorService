@@ -9,6 +9,9 @@ namespace CalculationServiceRest.Models
 {
     public class MethodType:BaseEntity
     {
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public override int Id { get; set; }
+
         [Required,Column(name: "INSERT_DATE")]
         public TimeSpan InsertDate { get; set; }
 
