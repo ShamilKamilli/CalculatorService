@@ -25,6 +25,7 @@ namespace CalculationServiceRest.Core.ServiceImplementation
         public void LogInfo(int methodType,TimeSpan time,string value)
         {
             LogEventInfo log = new LogEventInfo();
+            log.Level = LogLevel.Info;
             log.Properties["METHOD_TYPE"] = methodType;
             log.Properties["INSERT_DATE"] = time;
             log.Properties["VALUE"] = value;

@@ -2803,7 +2803,6 @@
       "path": "system.collections.immutable/1.2.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
@@ -2820,7 +2819,6 @@
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2859,7 +2857,6 @@
       "path": "system.collections.specialized/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2898,7 +2895,6 @@
       "path": "system.componentmodel/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2957,7 +2953,6 @@
       "path": "system.componentmodel.eventbasedasync/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4269,7 +4264,6 @@
       "path": "system.reflection.metadata/1.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.1/System.Reflection.Metadata.dll",
@@ -4748,6 +4742,7 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5852,23 +5847,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\code\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\code\\Desktop\\CalculationService\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
       "projectName": "CalculationService.TESTs",
-      "projectPath": "C:\\Users\\code\\Desktop\\CalculationService\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
-      "packagesPath": "C:\\Users\\code\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\code\\Desktop\\CalculationService\\CalculationServiceRest\\CalculationService.TESTs\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\code\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NLog;
 using NLog.Web;
@@ -38,9 +39,9 @@ namespace CalculationServiceRest
                 opt.UseSqlServer(_configuration.GetConnectionString("CalculationServiceConnection"));
             });
 
-            services.AddScoped<CalculatorSoap,CalculatorSoapClient>();
+            services.AddSingleton<CalculatorSoap>(new CalculatorSoapClient(CalculatorSoapClient.EndpointConfiguration.CalculatorSoap));
 
-            services.AddScoped<ICalculatorService, CalculatorServiceImplementation>();
+            services.AddSingleton<ICalculatorService, CalculatorServiceImplementation>();
 
             services.AddScoped<ILoggerDependency, LoggerDependency>();
 
