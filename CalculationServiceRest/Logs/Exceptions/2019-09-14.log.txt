@@ -1,3 +1,0 @@
-------Error(2019-09-14 14:06:01.9240)DESKTOP-DAFPPRT------
-                       Exception Type: |                       Exception Message: |                       Stack Trace: |                       Additional Info:sad
-
