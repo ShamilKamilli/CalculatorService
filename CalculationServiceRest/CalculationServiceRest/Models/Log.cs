@@ -14,7 +14,7 @@ namespace CalculationServiceRest.Models
         [Required,Column(name:"INSERT_DATE")]
         public TimeSpan InsertDate { get; set; }
 
-        [Required,Column(name:"VALUE",TypeName = "binary(50)")]
+        [Required,Column(name:"VALUE")]
         public string Value { get; set; }
 
         public virtual MethodType MethodType { get; set; }

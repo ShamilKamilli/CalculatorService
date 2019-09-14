@@ -1,4 +1,0 @@
-------Error(2019-09-13 01:04:58.7712)DESKTOP-DAFPPRT------
-                       Exception Type:System.Exception |                       Exception Message:sda |                       Stack Trace: |                       Additional Info:System.Exception: sda
-   at CalculationServiceRest.Controllers.CalculateController.Add(Int32 firstNumber, Int32 secondNumber) in C:\Users\Admin\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\Controllers\CalculateController.cs:line 30
-

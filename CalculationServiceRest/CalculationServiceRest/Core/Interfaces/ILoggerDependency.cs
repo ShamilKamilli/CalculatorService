@@ -7,8 +7,10 @@ namespace CalculationServiceRest.Core.Interfaces
 {
     public interface ILoggerDependency
     {
-        void LogInfo(int methodType, TimeSpan time, string value);
+        void LogInfo(MethodTypeModel model);
 
         void LogError(Exception exception);
+
+        void SaveChanges();
     }
 }

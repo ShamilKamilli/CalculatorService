@@ -1,6 +1,5 @@
 ﻿using CalculationServiceRest.Core.Interfaces;
 using NLog;
-using NLog.Web;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +9,15 @@ namespace CalculationServiceRest.Core.ServiceImplementation
 {
     public class LoggerDependency : ILoggerDependency
     {
+        private static object Synchronize = new object();
+
+        private List<MethodTypeModel> logs = null;
         private readonly ILogger _logger = null;
 
-        public LoggerDependency()
+        public LoggerDependency(ILogger logger)
         {
-            _logger= NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            _logger = logger;
+            logs = new List<MethodTypeModel>();
         }
 
         public void LogError(Exception exception)
@@ -22,15 +25,24 @@ namespace CalculationServiceRest.Core.ServiceImplementation
             _logger.Error(exception);
         }
 
-        public void LogInfo(int methodType,TimeSpan time,string value)
+        public void LogInfo(MethodTypeModel model)
         {
-            LogEventInfo log = new LogEventInfo();
-            log.Level = LogLevel.Info;
-            log.Properties["METHOD_TYPE"] = methodType;
-            log.Properties["INSERT_DATE"] = time;
-            log.Properties["VALUE"] = value;
+            logs.Add(model);
+        }
 
-            _logger.Info(log);
+        public void SaveChanges()
+        {
+            lock (Synchronize)
+            {
+                foreach (var item in logs)
+                {
+                    LogEventInfo info = new LogEventInfo();
+                    info.Properties["VALUE"] = item.Value;
+                    info.Properties["METHOD_TYPE"] = item.MethodType;
+                    info.Properties["INSERT_DATE"] = item.InsertDate;
+                    _logger.Info(info);
+                }
+            }
         }
     }
 }

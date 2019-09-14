@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CalculationServiceRest.Core.Interfaces;
+﻿using CalculationServiceRest.Core.Interfaces;
 using CalculationServiceRest.Core.ServiceImplementation;
-using CalculationServiceRest.DAL;
+using CalculationServiceRest.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using NLog;
 using NLog.Web;
 using SoapServiceReference;
@@ -43,6 +36,11 @@ namespace CalculationServiceRest
 
             services.AddSingleton<ICalculatorService, CalculatorServiceImplementation>();
 
+            services.AddScoped<ILogger>(x =>
+            {
+                return NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            });
+
             services.AddScoped<ILoggerDependency, LoggerDependency>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -59,6 +57,7 @@ namespace CalculationServiceRest
             {
                 app.UseHsts();
             }
+
 
             app.UseHttpsRedirection();
             app.UseMvc();
