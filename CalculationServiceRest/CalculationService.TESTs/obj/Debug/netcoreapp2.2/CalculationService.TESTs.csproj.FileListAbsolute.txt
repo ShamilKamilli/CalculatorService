@@ -39,3 +39,4 @@ C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationService.TE
 C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationService.TESTs\obj\Debug\netcoreapp2.2\CalculationService.TESTs.AssemblyInfo.cs
 C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationService.TESTs\obj\Debug\netcoreapp2.2\CalculationService.TESTs.dll
 C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationService.TESTs\obj\Debug\netcoreapp2.2\CalculationService.TESTs.pdb
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationService.TESTs\obj\Debug\netcoreapp2.2\CalculationService.TESTs.csprojAssemblyReference.cache

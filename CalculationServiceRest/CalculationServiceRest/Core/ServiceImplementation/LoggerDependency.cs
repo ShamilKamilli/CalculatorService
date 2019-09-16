@@ -38,7 +38,7 @@ namespace CalculationServiceRest.Core.ServiceImplementation
                 {
                     LogEventInfo info = new LogEventInfo();
                     info.Properties["VALUE"] = item.Value;
-                    info.Properties["METHOD_TYPE"] = item.MethodType;
+                    info.Properties["METHOD_TYPE"] = (int)item.MethodType;
                     info.Properties["INSERT_DATE"] = item.InsertDate;
                     _logger.Info(info);
                 }
