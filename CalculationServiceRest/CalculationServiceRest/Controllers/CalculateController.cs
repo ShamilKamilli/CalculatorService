@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using CalculationServiceRest.Core;
 using CalculationServiceRest.Core.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using NLog;
-using NLog.Targets;
-using SoapServiceReference;
 
 namespace CalculationServiceRest.Controllers
 {
@@ -35,6 +25,7 @@ namespace CalculationServiceRest.Controllers
         {
             try
             {
+                _logger.LogError(new Exception());
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate=DateTime.Now.TimeOfDay,
