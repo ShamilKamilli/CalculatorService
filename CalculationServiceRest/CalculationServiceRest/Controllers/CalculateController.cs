@@ -38,7 +38,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate=DateTime.Now.TimeOfDay,
-                    MethodType=1,
+                    MethodType= MethodTypeEnum.Add,
                     Value=$"add method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
                 });
 
@@ -47,7 +47,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 1,
+                    MethodType = MethodTypeEnum.Add,
                     Value = $"soap service response is {response}"
                 });
                 _logger.SaveChanges();
@@ -68,7 +68,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 2,
+                    MethodType = MethodTypeEnum.Subtract,
                     Value = $"Subtract method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
                 });
 
@@ -77,7 +77,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 2,
+                    MethodType = MethodTypeEnum.Subtract,
                     Value = $"soap service response is {response}"
                 });
                 _logger.SaveChanges();
@@ -98,7 +98,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 3,
+                    MethodType = MethodTypeEnum.Multiply,
                     Value = $"Multiply method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
                 });
 
@@ -107,7 +107,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 3,
+                    MethodType = MethodTypeEnum.Multiply,
                     Value = $"soap service response is {response}"
                 });
                 _logger.SaveChanges();
@@ -128,7 +128,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 4,
+                    MethodType = MethodTypeEnum.Divide,
                     Value = $"Subtract method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
                 });
 
@@ -137,7 +137,7 @@ namespace CalculationServiceRest.Controllers
                 _logger.LogInfo(new MethodTypeModel
                 {
                     InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = 4,
+                    MethodType = MethodTypeEnum.Divide,
                     Value = $"soap service response is {response}"
                 });
                 _logger.SaveChanges();

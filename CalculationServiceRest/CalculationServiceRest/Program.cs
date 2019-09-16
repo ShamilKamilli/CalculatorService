@@ -18,13 +18,13 @@ namespace CalculationServiceRest
             {
                 using (var db=scope.ServiceProvider.GetRequiredService<CalculationDbContext>())
                 {
-                    foreach (var item in Constants.MethodTypes)
+                    foreach (var item in Enum.GetNames(typeof(MethodTypeEnum)).Select(value => (int)Enum.Parse(typeof(MethodTypeEnum), value)).ToList())
                     {
-                        if(db.MethodTypes.FirstOrDefault(m=>m.Id==item.Value)==null)
+                        if(db.MethodTypes.FirstOrDefault(m=>m.Id==item)==null)
                         {
                             db.MethodTypes.Add(new Models.MethodType
                             {
-                                Id = item.Value,
+                                Id = item,
                                 InsertDate = DateTime.Now.TimeOfDay
                             });
 

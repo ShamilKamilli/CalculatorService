@@ -9,7 +9,7 @@ namespace CalculationServiceRest.Core
     {
         public string Value { get; set; }
 
-        public int MethodType { get; set; }
+        public MethodTypeEnum MethodType { get; set; }
 
         public TimeSpan InsertDate { get; set; }
     }

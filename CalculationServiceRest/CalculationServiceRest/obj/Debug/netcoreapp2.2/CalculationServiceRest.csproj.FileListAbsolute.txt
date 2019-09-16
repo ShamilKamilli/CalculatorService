@@ -11,3 +11,17 @@ C:\Users\Admin\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRe
 C:\Users\Admin\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorTargetAssemblyInfo.cache
 C:\Users\Admin\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.dll
 C:\Users\Admin\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.pdb
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.csproj.CoreCompileInputs.cache
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorAssemblyInfo.cache
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorAssemblyInfo.cs
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.AssemblyInfoInputs.cache
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.AssemblyInfo.cs
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.deps.json
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.runtimeconfig.json
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.runtimeconfig.dev.json
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.dll
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\bin\Debug\netcoreapp2.2\CalculationServiceRest.pdb
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.csprojAssemblyReference.cache
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.RazorTargetAssemblyInfo.cache
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.dll
+C:\Users\Code\Desktop\CalculatorApp\CalculationServiceRest\CalculationServiceRest\obj\Debug\netcoreapp2.2\CalculationServiceRest.pdb

@@ -4742,7 +4742,6 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5847,23 +5846,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Code\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
+      "projectUniqueName": "C:\\Users\\Code\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
       "projectName": "CalculationService.TESTs",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\obj\\",
+      "projectPath": "C:\\Users\\Code\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\CalculationService.TESTs.csproj",
+      "packagesPath": "C:\\Users\\Code\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Code\\Desktop\\CalculatorApp\\CalculationServiceRest\\CalculationService.TESTs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Code\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
