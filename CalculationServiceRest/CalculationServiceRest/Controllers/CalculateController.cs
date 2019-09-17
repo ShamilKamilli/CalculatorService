@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using CalculationServiceRest.Core;
+using CalculationServiceRest.Core.Extensions;
 using CalculationServiceRest.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,124 +22,99 @@ namespace CalculationServiceRest.Controllers
             _logger = logger;
         }
 
-        [Route("")]
-        public async Task<IActionResult> Add(int firstNumber,int secondNumber)
+        [Route("Add")]
+        public async Task<IActionResult> Add(CulculatorModel model)
         {
+            if (!ModelState.IsValid)
+                return new StatusCodeResult((int)HttpStatusCode.NotAcceptable);
             try
             {
-                _logger.LogError(new Exception());
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate=DateTime.Now.TimeOfDay,
-                    MethodType= MethodTypeEnum.Add,
-                    Value=$"add method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
-                });
 
-                var response = await _calculatorService.AddAsync(firstNumber, secondNumber);
-                
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Add,
-                    Value = $"soap service response is {response}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Add,$"add method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
+
+                var response = await _calculatorService.AddAsync(model.FirstNumber, model.SecondNumber);
+
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Add, $"soap service response is {response}");
+
                 _logger.SaveChanges();
                 return Ok(response);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex);
-                return new StatusCodeResult(500);
+                return new StatusCodeResult((int)HttpStatusCode.InternalServerError);
             }
         }
 
         [Route("subtract")]
-        public async Task<IActionResult> Subtract(int firstNumber, int secondNumber)
+        public async Task<IActionResult> Subtract(CulculatorModel model)
         {
+            if (!ModelState.IsValid)
+                return new StatusCodeResult((int)HttpStatusCode.NotAcceptable);
+
             try
             {
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Subtract,
-                    Value = $"Subtract method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Subtract, $"Subtract method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
 
-                var response = await _calculatorService.SubtractAsync(firstNumber, secondNumber);
+                var response = await _calculatorService.SubtractAsync(model.FirstNumber, model.SecondNumber);
 
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Subtract,
-                    Value = $"soap service response is {response}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Add, $"soap service response is {response}");
+
                 _logger.SaveChanges();
                 return Ok(response);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex);
-                return new StatusCodeResult(500);
+                return new StatusCodeResult((int)HttpStatusCode.InternalServerError);
             }
         }
 
         [Route("multiply")]
-        public async Task<IActionResult> Multiply(int firstNumber, int secondNumber)
+        public async Task<IActionResult> Multiply(CulculatorModel model)
         {
+            if (!ModelState.IsValid)
+                return new StatusCodeResult((int)HttpStatusCode.NotAcceptable);
+
             try
             {
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Multiply,
-                    Value = $"Multiply method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Multiply, $"Multiply method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
 
-                var response = await _calculatorService.MultiplyAsync(firstNumber, secondNumber);
+                var response = await _calculatorService.MultiplyAsync(model.FirstNumber, model.SecondNumber);
 
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Multiply,
-                    Value = $"soap service response is {response}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Add, $"soap service response is {response}");
+
                 _logger.SaveChanges();
                 return Ok(response);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex);
-                return new StatusCodeResult(500);
+                return new StatusCodeResult((int)HttpStatusCode.InternalServerError);
             }
         }
 
         [Route("divide")]
-        public async Task<IActionResult> Divide(int firstNumber, int secondNumber)
+        public async Task<IActionResult> Divide(CulculatorModel model)
         {
+            if (!ModelState.IsValid)
+                return new StatusCodeResult((int)HttpStatusCode.NotAcceptable);
+
             try
             {
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Divide,
-                    Value = $"Subtract method called by firstnumber={firstNumber} and secondNumber={secondNumber}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Multiply, $"Divide method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
 
-                var response = await _calculatorService.DivideAsync(firstNumber, secondNumber);
+                var response = await _calculatorService.DivideAsync(model.FirstNumber, model.SecondNumber);
 
-                _logger.LogInfo(new MethodTypeModel
-                {
-                    InsertDate = DateTime.Now.TimeOfDay,
-                    MethodType = MethodTypeEnum.Divide,
-                    Value = $"soap service response is {response}"
-                });
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Add, $"soap service response is {response}");
+
                 _logger.SaveChanges();
                 return Ok(response);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex);
-                return new StatusCodeResult(500);
+                return new StatusCodeResult((int)HttpStatusCode.InternalServerError);
             }
         }
     }
