@@ -102,7 +102,7 @@ namespace CalculationServiceRest.Controllers
 
             try
             {
-                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Multiply, $"Divide method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
+                _logger.AddInfo(DateTime.Now.TimeOfDay, MethodTypeEnum.Divide, $"Divide method called by firstnumber={model.FirstNumber} and secondNumber={model.SecondNumber}");
 
                 var response = await _calculatorService.DivideAsync(model.FirstNumber, model.SecondNumber);
 
